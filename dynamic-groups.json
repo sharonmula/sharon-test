@@ -1,0 +1,32 @@
+[
+  {
+    "name": "A group",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: DynamicGroup\n#     name: A group\n#     id: c282faf5-ed6c-4e22-ac32-22d9b16117ab\ndynamic_group(identity) if {\n\tidentity.template == \"Employees\"\n\tidentity[\"uid\"] == \"A\"\n}"
+    ]
+  },
+  {
+    "name": "Employees All Users",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: DynamicGroup\n#     name: Employees All Users\n#     id: 4e5f4825-7920-4892-be28-eb5d70c73552\n#     description: \"Predefined Dynamic Group. All Users contains all organization's users defined in the IDP\"\ndynamic_group(identity) if {\n\tidentity.template == \"Employees\"\n}"
+    ]
+  },
+  {
+    "name": "uniqe name! All Users",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: DynamicGroup\n#     name: uniqe name! All Users\n#     id: 32d44f0a-36b5-4fe9-b615-c48b7d1a68f7\n#     description: \"Predefined Dynamic Group. All Users contains all organization's users defined in the IDP\"\ndynamic_group(identity) if {\n\tidentity.template == \"uniqename\"\n}"
+    ]
+  },
+  {
+    "name": "User All Users",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: DynamicGroup\n#     name: User All Users\n#     id: 9c1bfd12-d8b9-456e-bc0a-de3ed2a144b4\n#     description: \"Predefined Dynamic Group. All Users contains all organization's users defined in the IDP\"\ndynamic_group(identity) if {\n\tidentity.template == \"User\"\n}"
+    ]
+  },
+  {
+    "name": "user is 1",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: DynamicGroup\n#     name: user is 1\n#     id: e5e36842-d185-4bad-9fea-53fa0c8127cd\ndynamic_group(identity) if {\n\tidentity.template == \"User\"\n\tidentity[\"uid\"] == \"1\"\n}"
+    ]
+  }
+]

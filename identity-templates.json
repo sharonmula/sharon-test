@@ -1,0 +1,59 @@
+[
+  {
+    "data": {
+      "templateId": "Employees",
+      "attributes": [
+        {
+          "attributeId": "uid",
+          "displayName": "User ID",
+          "description": "",
+          "type": "STRING",
+          "isAvailableForPolicies": true,
+          "isUsedInAccessRequest": true,
+          "nameForRequest": "uid"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "templateId": "uniqename",
+      "attributes": [
+        {
+          "attributeId": "uid",
+          "displayName": "User ID",
+          "description": "",
+          "type": "STRING",
+          "isAvailableForPolicies": true,
+          "isUsedInAccessRequest": true,
+          "nameForRequest": "uid"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "templateId": "User",
+      "attributes": [
+        {
+          "attributeId": "uid",
+          "displayName": "User ID",
+          "description": "",
+          "type": "STRING",
+          "isAvailableForPolicies": true,
+          "isUsedInAccessRequest": true,
+          "nameForRequest": "uid"
+        },
+        {
+          "attributeId": "Branch",
+          "displayName": "Branch",
+          "description": "",
+          "type": "STRING",
+          "isAvailableForPolicies": true,
+          "isUsedInAccessRequest": true,
+          "nameForRequest": "Branch"
+        }
+      ]
+    }
+  }
+]
