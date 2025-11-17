@@ -1,0 +1,14 @@
+[
+  {
+    "appId": "Access-file",
+    "appName": "Access file",
+    "authWsId": "c8bdb33c-833b-40b6-80dd-acb47bcd4c38",
+    "authWsName": "Authorization Workspace 1"
+  },
+  {
+    "appId": "App",
+    "appName": "App",
+    "authWsId": "c8bdb33c-833b-40b6-80dd-acb47bcd4c38",
+    "authWsName": "Authorization Workspace 1"
+  }
+]

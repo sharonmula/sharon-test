@@ -1,0 +1,17 @@
+[
+  {
+    "idWsId": "6e461202-5d3a-4e79-be3e-01ada06d3b1f",
+    "idWsName": "Employees",
+    "idTemplateId": "Employees"
+  },
+  {
+    "idWsId": "30470797-676b-4326-9e7e-a9e3dae8be4f",
+    "idWsName": "uniqe name!",
+    "idTemplateId": "uniqename"
+  },
+  {
+    "idWsId": "fe51c4f8-65e7-45f5-84bd-d2976845f400",
+    "idWsName": "User",
+    "idTemplateId": "User"
+  }
+]
