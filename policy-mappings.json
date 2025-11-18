@@ -1,0 +1,23 @@
+[
+  {
+    "authWsId": "c8bdb33c-833b-40b6-80dd-acb47bcd4c38",
+    "authWsName": "Authorization Workspace 1",
+    "envId": "a5f8e3f0-1791-42de-af06-e9b9c4a23b2c",
+    "policyId": "70eb9dea-5440-4401-a1c6-48b80ddf6c04",
+    "policyName": "access_file_policy"
+  },
+  {
+    "authWsId": "c8bdb33c-833b-40b6-80dd-acb47bcd4c38",
+    "authWsName": "Authorization Workspace 1",
+    "envId": "a5f8e3f0-1791-42de-af06-e9b9c4a23b2c",
+    "policyId": "d61d554a-6d96-4af3-87b3-6727432ddc4e",
+    "policyName": "policy2"
+  },
+  {
+    "authWsId": "c8bdb33c-833b-40b6-80dd-acb47bcd4c38",
+    "authWsName": "Authorization Workspace 1",
+    "envId": "a5f8e3f0-1791-42de-af06-e9b9c4a23b2c",
+    "policyId": "c01550e4-4d8d-48e0-b26a-d958caa04ff9",
+    "policyName": "policy25"
+  }
+]
