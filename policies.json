@@ -1,0 +1,20 @@
+[
+  {
+    "policyId": "d61d554a-6d96-4af3-87b3-6727432ddc4e",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     policyId: d61d554a-6d96-4af3-87b3-6727432ddc4e\n#     name: policy2\n#     accessType: Allow\n#     policyUse: DYNAMIC_AUTHORIZATION_SERVICE\n#     sourceEnvironmentId: a5f8e3f0-1791-42de-af06-e9b9c4a23b2c\n#     applications: \n#       - id: App\n#       - id: Access-file\npackage policy\nimport rego.v1\n\n# METADATA\n# custom:\n#   plainid:\n#     kind: DynamicGroup\n#     name: User All Users\n#     id: 9c1bfd12-d8b9-456e-bc0a-de3ed2a144b4\n#     description: \"Predefined Dynamic Group. All Users contains all organization's users defined in the IDP\"\ndynamic_group(identity) if {\n\tidentity.template == \"User\"\n}\n\n# METADATA\n# custom:\n#   plainid:\n#     kind: DynamicGroup\n#     name: user is 1\n#     id: e5e36842-d185-4bad-9fea-53fa0c8127cd\ndynamic_group(identity) if {\n\tidentity.template == \"User\"\n\tidentity[\"uid\"] == \"1\"\n}\n\n# METADATA\n# custom:\n#   plainid:\n#     kind: Ruleset\n#     name: RS\n#     id: c83bbb2a-6bd8-468d-8e37-bf1b268f685f\nruleset(asset, identity, requestParams, action) if {\n\tasset.template == \"request-asset-type\"\n\tasset[\"location\"] == \"NY\"\n\taction.id in [\"access\"]\n}"
+    ]
+  },
+  {
+    "policyId": "policy25",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     policyId: policy25\n#     name: policy25\n#     accessType: Allow\n#     policyUse: DYNAMIC_AUTHORIZATION_SERVICE\n#     sourceEnvironmentId: a5f8e3f0-1791-42de-af06-e9b9c4a23b2c\n#     applications: \n#       - id: App\n#       - id: Access-file\npackage policy\nimport rego.v1\n\n# METADATA\n# custom:\n#   plainid:\n#     kind: DynamicGroup\n#     name: User All Users\n#     id: 9c1bfd12-d8b9-456e-bc0a-de3ed2a144b4\n#     description: \"Predefined Dynamic Group. All Users contains all organization's users defined in the IDP\"\ndynamic_group(identity) if {\n\tidentity.template == \"User\"\n}\n\n# METADATA\n# custom:\n#   plainid:\n#     kind: DynamicGroup\n#     name: user is 1\n#     id: e5e36842-d185-4bad-9fea-53fa0c8127cd\ndynamic_group(identity) if {\n\tidentity.template == \"User\"\n\tidentity[\"uid\"] == \"1\"\n}\n\n# METADATA\n# custom:\n#   plainid:\n#     kind: Ruleset\n#     name: RS\n#     id: c83bbb2a-6bd8-468d-8e37-bf1b268f685f\nruleset(asset, identity, requestParams, action) if {\n\tasset.template == \"request-asset-type\"\n\tasset[\"location\"] == \"NY\"\n\taction.id in [\"access\"]\n}"
+    ]
+  },
+  {
+    "policyId": "70eb9dea-5440-4401-a1c6-48b80ddf6c04",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     policyId: 70eb9dea-5440-4401-a1c6-48b80ddf6c04\n#     name: access_file_policy\n#     accessType: Allow\n#     policyUse: DYNAMIC_AUTHORIZATION_SERVICE\n#     sourceEnvironmentId: a5f8e3f0-1791-42de-af06-e9b9c4a23b2c\n#     applications: \n#       - id: Access-file\n#     customAttributes:\n#       tag: \"full\"\npackage policy\nimport rego.v1\n\n# METADATA\n# custom:\n#   plainid:\n#     kind: DynamicGroup\n#     name: User All Users\n#     id: 9c1bfd12-d8b9-456e-bc0a-de3ed2a144b4\n#     description: \"Predefined Dynamic Group. All Users contains all organization's users defined in the IDP\"\ndynamic_group(identity) if {\n\tidentity.template == \"User\"\n}\n\n# METADATA\n# custom:\n#   plainid:\n#     kind: Ruleset\n#     name: groupid filtering\n#     id: 3c6217e2-42f6-435b-9cf5-8a76df66a186\nruleset(asset, identity, requestParams, action) if {\n\tasset.template == \"access-file\"\n\tidentity.template == \"User\"\n\tasset[\"path\"] == identity[\"uid\"]\n\taction.id in [\"access\"]\n}"
+    ]
+  }
+]
