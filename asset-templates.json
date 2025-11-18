@@ -1,0 +1,211 @@
+[
+  {
+    "data": {
+      "templateId": "access-file",
+      "displayName": "access file-external",
+      "source": "EXTERNAL",
+      "isAttributeSentInRequest": false,
+      "isUsedForFiltering": true,
+      "paaGroupId": "AWS-Product-Team-PAAs_Global",
+      "viewName": "vview_accessfile",
+      "attributes": [
+        {
+          "attributeId": "group-type",
+          "displayName": "group type",
+          "type": "STRING",
+          "sourceAttribute": "grouptype",
+          "isAvailableForPolicies": true,
+          "nameForRequest": "group type",
+          "isMultiValue": false,
+          "isCalculated": false
+        },
+        {
+          "attributeId": "path",
+          "displayName": "Asset ID",
+          "type": "STRING",
+          "sourceAttribute": "groupid",
+          "isAvailableForPolicies": true,
+          "nameForRequest": "path",
+          "isMultiValue": false,
+          "isCalculated": false
+        }
+      ],
+      "actions": [
+        {
+          "actionId": "access",
+          "value": "access"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "templateId": "Claims",
+      "displayName": "Claims",
+      "description": "Default Claims Type - can be used for attribute mapping or part of a policy",
+      "source": "PLAINID",
+      "isAttributeSentInRequest": true,
+      "isUsedForFiltering": false,
+      "attributes": [
+        {
+          "attributeId": "claimKey",
+          "displayName": "claimKey",
+          "type": "STRING",
+          "isAvailableForPolicies": true,
+          "nameForRequest": "claimKey",
+          "isMultiValue": false,
+          "maxLength": 9999,
+          "isRequired": false,
+          "canBeUpdated": "ALWAYS"
+        },
+        {
+          "attributeId": "claimValue",
+          "displayName": "claimValue",
+          "type": "STRING",
+          "isAvailableForPolicies": true,
+          "nameForRequest": "claimValue",
+          "isMultiValue": false,
+          "maxLength": 9999,
+          "isRequired": false,
+          "canBeUpdated": "ALWAYS"
+        },
+        {
+          "attributeId": "path",
+          "displayName": "Asset ID",
+          "type": "STRING",
+          "isAvailableForPolicies": false,
+          "nameForRequest": "path",
+          "isMultiValue": false,
+          "maxLength": 9999,
+          "isRequired": true,
+          "canBeUpdated": "ALWAYS"
+        }
+      ],
+      "actions": [
+        {
+          "actionId": "Access",
+          "value": "Access"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "templateId": "internal",
+      "displayName": "internalg",
+      "source": "PLAINID",
+      "isAttributeSentInRequest": false,
+      "isUsedForFiltering": false,
+      "attributes": [
+        {
+          "attributeId": "path",
+          "displayName": "Asset ID",
+          "type": "STRING",
+          "isAvailableForPolicies": false,
+          "nameForRequest": "path",
+          "isMultiValue": false,
+          "maxLength": 9999,
+          "isRequired": true,
+          "canBeUpdated": "ALWAYS"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "data": {
+      "templateId": "request-asset-type",
+      "displayName": "request asset type",
+      "source": "REQUEST",
+      "isUsedForFiltering": true,
+      "attributes": [
+        {
+          "attributeId": "location",
+          "displayName": "location",
+          "type": "STRING",
+          "isAvailableForPolicies": true,
+          "nameForRequest": "location",
+          "isCalculated": false
+        },
+        {
+          "attributeId": "path",
+          "displayName": "Asset ID",
+          "type": "STRING",
+          "isAvailableForPolicies": false,
+          "nameForRequest": "path",
+          "isCalculated": false
+        }
+      ],
+      "actions": [
+        {
+          "actionId": "access",
+          "value": "access"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "templateId": "test-internal",
+      "displayName": "test internal",
+      "source": "PLAINID",
+      "isAttributeSentInRequest": true,
+      "isUsedForFiltering": true,
+      "attributes": [
+        {
+          "attributeId": "path",
+          "displayName": "Asset ID",
+          "type": "STRING",
+          "isAvailableForPolicies": false,
+          "nameForRequest": "path",
+          "isMultiValue": false,
+          "maxLength": 9999,
+          "isRequired": true,
+          "canBeUpdated": "ALWAYS"
+        }
+      ],
+      "actions": [
+        {
+          "actionId": "access",
+          "value": "access"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "templateId": "vir",
+      "displayName": "vir",
+      "source": "REQUEST",
+      "isUsedForFiltering": false,
+      "attributes": [
+        {
+          "attributeId": "attr2",
+          "displayName": "attr2",
+          "type": "STRING",
+          "isAvailableForPolicies": true,
+          "nameForRequest": "attr2",
+          "isCalculated": false
+        },
+        {
+          "attributeId": "path",
+          "displayName": "Asset ID",
+          "type": "STRING",
+          "isAvailableForPolicies": false,
+          "nameForRequest": "path",
+          "isCalculated": false
+        }
+      ],
+      "actions": [
+        {
+          "actionId": "read",
+          "value": "read"
+        },
+        {
+          "actionId": "write",
+          "value": "write"
+        }
+      ]
+    }
+  }
+]
