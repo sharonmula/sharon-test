@@ -1,0 +1,15 @@
+[
+  {
+    "name": "ip",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: Condition IP\n#     name: ip\n#     id: 8f501585-01b8-4f54-a2a3-e207941cfe79\ncondition_ip(env) if {\n\tnet.cidr_contains(\"10.0.0.0/8\", env.sourceIp)\n}"
+    ]
+  },
+  {
+    "name": "identity con",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: Condition Identity\n#     name: identity con\n#     id: aa03f814-d32c-431b-a452-e9d1ee35bf23\ncondition_identity(identity) if {\n\tidentity.template == \"User\"\n\tidentity[\"Branch\"] == \"abc\"\n}",
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: Condition Identity\n#     name: identity con\n#     id: aa03f814-d32c-431b-a452-e9d1ee35bf23\ncondition_identity(identity) if {\n\tidentity.template == \"Employees\"\n\tidentity[\"uid\"] == \"123\"\n}"
+    ]
+  }
+]
