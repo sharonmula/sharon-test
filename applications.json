@@ -1,0 +1,25 @@
+[
+  {
+    "data": {
+      "applicationId": "Access-file",
+      "displayName": "Access file",
+      "colorIndication": "#02D17B",
+      "assetTemplateIds": [
+        "access-file",
+        "request-asset-type",
+        "test-internal"
+      ]
+    }
+  },
+  {
+    "data": {
+      "applicationId": "App",
+      "displayName": "App",
+      "description": "Default Application",
+      "colorIndication": "#f8e71c",
+      "assetTemplateIds": [
+        "Claims"
+      ]
+    }
+  }
+]
