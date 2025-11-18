@@ -1,0 +1,84 @@
+[
+  {
+    "id": "67594b09-35d6-4a0e-a167-c86defb5d22d",
+    "name": "All",
+    "kind": "Ruleset",
+    "description": "Predefined Ruleset. All Assets contains all created assets defined in the Asset Type",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: Ruleset\n#     name: All\n#     id: 67594b09-35d6-4a0e-a167-c86defb5d22d\n#     description: \"Predefined Ruleset. All Assets contains all created assets defined in the Asset Type\"\nruleset(asset, identity, requestParams, action) if {\n\tasset.template == \"access-file\"\n}"
+    ]
+  },
+  {
+    "id": "3c6217e2-42f6-435b-9cf5-8a76df66a186",
+    "name": "groupid filtering",
+    "kind": "Ruleset",
+    "description": null,
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: Ruleset\n#     name: groupid filtering\n#     id: 3c6217e2-42f6-435b-9cf5-8a76df66a186\nruleset(asset, identity, requestParams, action) if {\n\tasset.template == \"access-file\"\n\tidentity.template == \"User\"\n\tasset[\"path\"] == identity[\"uid\"]\n}"
+    ]
+  },
+  {
+    "id": "95141e3c-f28a-45f4-8796-0e90321810b0",
+    "name": "or example",
+    "kind": "Ruleset",
+    "description": null,
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: Ruleset\n#     name: or example\n#     id: 95141e3c-f28a-45f4-8796-0e90321810b0\nruleset(asset, identity, requestParams, action) if {\n\tasset.template == \"access-file\"\n\tasset[\"path\"] == \"12323\"\n}",
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: Ruleset\n#     name: or example\n#     id: 95141e3c-f28a-45f4-8796-0e90321810b0\nruleset(asset, identity, requestParams, action) if {\n\tasset.template == \"access-file\"\n\tidentity.template == \"User\"\n\tasset[\"group-type\"] == identity[\"Branch\"]\n}"
+    ]
+  },
+  {
+    "id": "01e2e4ff-c154-4619-a3e0-e4a81a4e81fa",
+    "name": "All",
+    "kind": "Ruleset",
+    "description": "Predefined Ruleset. All Assets contains all created assets defined in the Asset Type",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: Ruleset\n#     name: All\n#     id: 01e2e4ff-c154-4619-a3e0-e4a81a4e81fa\n#     description: \"Predefined Ruleset. All Assets contains all created assets defined in the Asset Type\"\nruleset(asset, identity, requestParams, action) if {\n\tasset.template == \"Claims\"\n}"
+    ]
+  },
+  {
+    "id": "1a431129-0695-4866-adc4-dcae20abf143",
+    "name": "All",
+    "kind": "Ruleset",
+    "description": "Predefined Ruleset. All Assets contains all created assets defined in the Asset Type",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: Ruleset\n#     name: All\n#     id: 1a431129-0695-4866-adc4-dcae20abf143\n#     description: \"Predefined Ruleset. All Assets contains all created assets defined in the Asset Type\"\nruleset(asset, identity, requestParams, action) if {\n\tasset.template == \"internal\"\n}"
+    ]
+  },
+  {
+    "id": "6530a3bf-06cb-42ad-b889-3913f5453596",
+    "name": "All",
+    "kind": "Ruleset",
+    "description": "Predefined Ruleset. All Assets contains all created assets defined in the Asset Type",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: Ruleset\n#     name: All\n#     id: 6530a3bf-06cb-42ad-b889-3913f5453596\n#     description: \"Predefined Ruleset. All Assets contains all created assets defined in the Asset Type\"\nruleset(asset, identity, requestParams, action) if {\n\tasset.template == \"request-asset-type\"\n}"
+    ]
+  },
+  {
+    "id": "c83bbb2a-6bd8-468d-8e37-bf1b268f685f",
+    "name": "RS",
+    "kind": "Ruleset",
+    "description": null,
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: Ruleset\n#     name: RS\n#     id: c83bbb2a-6bd8-468d-8e37-bf1b268f685f\nruleset(asset, identity, requestParams, action) if {\n\tasset.template == \"request-asset-type\"\n\tasset[\"location\"] == \"NY\"\n}"
+    ]
+  },
+  {
+    "id": "693b21ed-3cb1-474b-9169-6faecc869c37",
+    "name": "All",
+    "kind": "Ruleset",
+    "description": "Predefined Ruleset. All Assets contains all created assets defined in the Asset Type",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: Ruleset\n#     name: All\n#     id: 693b21ed-3cb1-474b-9169-6faecc869c37\n#     description: \"Predefined Ruleset. All Assets contains all created assets defined in the Asset Type\"\nruleset(asset, identity, requestParams, action) if {\n\tasset.template == \"test-internal\"\n}"
+    ]
+  },
+  {
+    "id": "8725952a-b517-4010-a312-9b072960b279",
+    "name": "All",
+    "kind": "Ruleset",
+    "description": "Predefined Ruleset. All Assets contains all created assets defined in the Asset Type",
+    "blocks": [
+      "# METADATA\n# custom:\n#   plainid:\n#     kind: Ruleset\n#     name: All\n#     id: 8725952a-b517-4010-a312-9b072960b279\n#     description: \"Predefined Ruleset. All Assets contains all created assets defined in the Asset Type\"\nruleset(asset, identity, requestParams, action) if {\n\tasset.template == \"vir\"\n}"
+    ]
+  }
+]
