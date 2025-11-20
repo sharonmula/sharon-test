@@ -1,0 +1,35 @@
+[
+  {
+    "data": [
+      {
+        "key": "tag",
+        "name": "tag",
+        "displayOrder": 1,
+        "type": "string",
+        "optionsConfig": {
+          "options": [
+            {
+              "key": "full",
+              "name": "full"
+            },
+            {
+              "key": "partial",
+              "name": "partial"
+            },
+            {
+              "key": "none",
+              "name": "none"
+            }
+          ]
+        },
+        "required": false,
+        "maxLength": 64,
+        "availableForPDP": true,
+        "onlyOnCreate": false,
+        "multiValue": false,
+        "listAttribute": true,
+        "propagationMode": "GLOBAL"
+      }
+    ]
+  }
+]
